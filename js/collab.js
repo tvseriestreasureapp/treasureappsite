@@ -5,7 +5,7 @@ const fetchCollaborations = async () => {
     const responsedata = await response.json();
     if (response.status === 200) {
       var allCollaborations = responsedata;
-      console.log("all Collaborations", Collaborations);
+      console.log("all Collaborations", allCollaborations);
 
       const CollaborationsRenderToHTML = allCollaborations
         .map((collabs) => {
