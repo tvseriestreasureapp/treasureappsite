@@ -38,7 +38,7 @@ SECRET_KEY = env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -53,10 +53,12 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'gdstorage',
     'rest_framework',
+    "corsheaders",
     'django_filters',
 ]
 
 MIDDLEWARE = [
+    "corsheaders.middleware.CorsMiddleware",
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -162,5 +164,6 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 GOOGLE_DRIVE_STORAGE_JSON_KEY_FILE_CONTENTS = env("GOOGLE_DRIVE_STORAGE_JSON_KEY_FILE_CONTENTS")
+CORS_ORIGIN_ALLOW_ALL = True
 
 django_heroku.settings(locals())
