@@ -6,7 +6,7 @@ from tapp.models.bot import Bot
 # Register your models here.
 
 class UserAdmin(admin.ModelAdmin):
-    list_display = ('id','firstname', 'lastname','email','password')
+    list_display = ('id','name','email','password')
 
 class BTSAdmin(admin.ModelAdmin):
     list_display = ('id','file')

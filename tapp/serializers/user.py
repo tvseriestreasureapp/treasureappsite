@@ -16,14 +16,13 @@ class SignUpSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = User
-        fields = ('firstname', 'lastname','email','password')
+        fields = ('name', 'email','password')
         # extra_kwargs = {'password': {'write_only' : True}}
 
     def create(self, validated_data):  
         User = get_user_model()
         user = User.objects.create_user(
-            validated_data['firstname'],
-            validated_data['lastname'],
+            validated_data['name'],
             validated_data['email'],
             validated_data['password'])
         return user
