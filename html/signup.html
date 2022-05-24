@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link href="../css/bootstrap.min.css" rel="stylesheet" > -->
+    <link href="../css/login.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>TreasureApp</title>
+    </head>
+
+    <body>
+        <div class='container'>
+            <div class='back_image'>
+
+            </div>
+
+            <div class='form'>
+                <form>
+                    <h2>Sign Up</h2>
+
+                    <div>
+                        <label class='label' for='name' ><b>Username:</b></label><br>
+                        <input class = 'input-field' type='text' placeholder='Enter Username' name='name' id = 'name' required>
+                    </div>
+        
+                    <div>
+                        <label class='label' for='email'><b>Email:</b></label><br>
+                        <input class = 'input-field' type='email' placeholder='Enter Email' name='email'  id ='email' required>
+                    </div>
+
+                    <div>
+                        <label class='label' for='psw' ><b>Password:</b></label><br>
+                        <input class = 'input-field' type='password' placeholder='Enter Password' name='psw' id = 'password' required>
+                    </div>
+
+                    <div>
+                        <label class='label' for='psw' ><b>Confirm Password:</b></label><br>
+                        <input class = 'input-field' type='password' placeholder='Enter Password' name='psw' id = 'password' required>
+                    </div>
+
+                    <div>
+                        <input id='check' type='checkbox' onclick='showPassword()'>
+                        <label id='sp'>Show Password</label>
+                    </div><br>
+
+                </form>
+                <button class='button' type='button' onclick='handleSignup()'>Sign Up</button><br><br>
+
+
+                <label> 
+                    <span class='login'>Already have an account? <a href='../html/login.html'>Login here</a></span>
+                </label>
+            </div>
+
+        </div>  
+
+
+    </body>
+    <script src="../js/signup.js"></script>
+</html>
