@@ -10,6 +10,8 @@ class BTS(models.Model):
 class Collab(models.Model):
     name = models.CharField(max_length=100, null=False, blank=False,default="")
     picture = models.ImageField(upload_to='collabs/',storage=gd_storage,blank=True,null=True)
+    description = models.CharField(max_length=1000, null=False, blank=False,default="")
+
 
 class Art(models.Model):
     name = models.CharField(max_length=100, null=False, blank=False,default="")
@@ -22,3 +24,14 @@ class Event(models.Model):
 class Actor(models.Model):
     name = models.CharField(max_length=100, null=False, blank=False,default="")
     picture = models.ImageField(upload_to='actor/',storage=gd_storage,blank=True,null=True)
+    summary = models.CharField(max_length=800, null=False, blank=False,default="")
+
+
+class Soundtrack(models.Model):
+    name = models.CharField(max_length=100, null=True, blank=True, default="")
+    picture = models.ImageField(upload_to='soundtrack/',storage=gd_storage,blank=True,null=True)
+    file = models.FileField(upload_to='soundtrack/music/',storage=gd_storage,blank=True,null=True)
+
+class Poster(models.Model):
+    name = models.CharField(max_length=100, null=True, blank=True, default="")
+    picture = models.FileField(upload_to='poster/',storage=gd_storage,blank=True,null=True)

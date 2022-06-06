@@ -30,7 +30,7 @@ function handleLogin() {
               let goodData = response.json();
       goodData.then(data => {
         console.log('Success:', data);
-        localStorage.setItem('access_token',data.access_token)
+        window.localStorage.setItem('access_token',data.access_token)
         window.location.href = '../index.html';
       })}})
       .catch((error) => {
