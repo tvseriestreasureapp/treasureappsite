@@ -5,6 +5,8 @@ from rest_framework import permissions
 from tapp.serializers.user import SignUpSerializer, LoginSerializer
 from rest_framework_simplejwt.views import TokenObtainPairView
 from rest_framework.response import Response
+from django.template.loader import get_template
+import os
 
 # Create your views here.
 class SignUpAPI(viewsets.ModelViewSet):
@@ -22,7 +24,6 @@ class SignUpAPI(viewsets.ModelViewSet):
                 context=self.get_serializer_context()).data
             })
         return Response
-
 class LoginView(TokenObtainPairView):
     permission_classes = [permissions.AllowAny, ]
     serializer_class = LoginSerializer

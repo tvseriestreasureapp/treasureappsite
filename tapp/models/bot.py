@@ -1,6 +1,6 @@
 from django.db import models
-
+from django.contrib.postgres.fields import ArrayField
 
 class Bot(models.Model):
-    question = models.TextField(blank=True,null=True)
-    answer = models.TextField(blank=True, null=True)
+    questions = ArrayField(models.CharField(max_length=1000, blank=True,null=True), default=list)
+    answers = ArrayField(models.CharField(max_length=1000, blank=True,null=True), default=list)

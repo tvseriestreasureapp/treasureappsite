@@ -25,7 +25,7 @@ class ActorAdmin(admin.ModelAdmin):
 
 
 class BotAdmin(admin.ModelAdmin):
-    list_display = ('id', 'question', 'answer')
+    list_display = ('id', 'questions', 'answers')
 
 class SoundtrackAdmin(admin.ModelAdmin):
     list_display = ('id', 'name', 'picture','file')

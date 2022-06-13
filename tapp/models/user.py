@@ -1,10 +1,15 @@
+from email.message import EmailMessage
+import os
 from django.contrib.auth.base_user import BaseUserManager
+from django.dispatch import receiver
 from django.utils.translation import gettext_lazy as _
 from django.db import models
 from django.contrib.auth.models import AbstractBaseUser
 from django.contrib.auth.models import PermissionsMixin
 from django.utils import timezone
 from datetime import date
+from django.db.models.signals import post_save
+from django.core.mail import send_mail
 
 
 class CustomUserManager(BaseUserManager):
@@ -88,3 +93,25 @@ class User(AbstractBaseUser, PermissionsMixin):
 
     def __str__(self):
         return self.email
+
+# @receiver(post_save, sender=User)
+# def email_new_account_credentials_handler(sender, instance, **kwargs):
+
+#     ctx = {
+#         "subject": "Account Created",
+#         "body": "client_account_created.html",
+#         "recipients": instance.email,
+#         "email": instance.email,
+#         "name": instance.name,
+#         "template_name": "client_account_created.html"
+#     }
+
+#     # content = EmailMessage(
+#     #     "Account Created",
+#     #     "Acount created successfully",
+#     #     'tvseriestreasureapp@gmail.com',
+#     #     instance.email
+#     # )
+
+#     send_mail(ctx["subject"], ctx["body"],"tvseriestreasureapp@gmail.com", [ctx["recipients"]])
+    
