@@ -1,5 +1,5 @@
 const fetchPosters = async () => {
-    var PostersAPI = "https://treasureapptv.herokuapp.com/api/posters";
+    var PostersAPI = "https://treasureapptv.herokuapp.com/api/poster";
     try {
       const response = await fetch(PostersAPI);
       const responsedata = await response.json();

@@ -3,6 +3,8 @@ function handleSignup() {
     let usernameVal = document.getElementById('name').value;
     let emailVal = document.getElementById('email').value;
     let passwordVal = document.querySelector('#password').value;
+    let confpasswordVal = document.getElementById('conf-password').value;
+
     
     let data = {name: usernameVal  ,email: emailVal, password: passwordVal };
     console.log('We are submitting this data to the backend in the right one', data);
@@ -27,7 +29,12 @@ function handleSignup() {
         if (response.status != 201) {
               console.log('You have a problem');
               return;
-          } else {
+          }
+        if (passwordVal !== confpasswordVal) {
+          alert("Passwords do not match");
+          return;  
+        } 
+           else {
               let goodData = response.json();
       goodData.then(data => {
         console.log('Success:', data);
@@ -47,5 +54,12 @@ function showPassword() {
     x.type = "text";
   } else {
     x.type = "password";
+  }
+
+  var y = document.getElementById("conf-password")
+  if (y.type === "password") {
+    y.type = "text";
+  } else {
+    y.type = "password";
   }
 }

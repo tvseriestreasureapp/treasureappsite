@@ -10,10 +10,10 @@ const fetchSoundtracks = async () => {
         const SoundtracksRenderToHTML = allSoundtracks
           .map((soundtrack) => {
             return `
-            <div class="soundtrack-card" title=${soundtrack.name}>
-              <a href=${soundtrack.picture} style="height: 100%; width: 100%;">
-              <img
-                  src=${soundtrack.picture} alt="Actors" width="100%" height="100%"/></a>
+            <div class="bts-card" >
+              <a href=${soundtrack.file} style="height: 100%; width: 100%;">
+              <video width="100%" height="100%" controls>
+                  <source src=${soundtrack.file} alt="Soundtrack" type="video/mp4"/></a>
             </div>
             `;
           })
