@@ -2,7 +2,7 @@ var allBots;
 const alternatives = ["Try again","Can you come again?","Go On..."]
 
 const fetchBot = async () => {
-    var BotAPI = "http://localhost:8000/api/bot";
+    var BotAPI = "https://treasureapptv.herokuapp.com/api/bot";
     try {
       const response = await fetch(BotAPI);
       const responsedata = await response.json();
