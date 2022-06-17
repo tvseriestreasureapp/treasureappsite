@@ -97,8 +97,9 @@ function addChatEntry(input, product) {
   let botText = document.createElement("span");
   botDiv.id = "bot";
   botDiv.className = "bot response";
-  let botImage = document.createElement('img') 
-  botImage.src="../images/chaticon.jpg"
+  let botImage = document.createElement('img')
+  botImage.id = "botimage" 
+  botImage.src="../images/chaticons.png"
   botImage.alt="chaticon"
   botDiv.appendChild(botImage)
   botText.innerText = "Typing...";
