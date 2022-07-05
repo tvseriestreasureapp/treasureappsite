@@ -1,30 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/bot.css" />
-  </head>
-  <body>
-    <div id="container" class="container">
-      <!-- <img
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/bot.css" />
+</head>
+
+<body>
+  <div>
+    <a class="btn btn--green btn--animated" href="../html/userpage.html">Home</a>
+  </div>
+  <!-- <img src="../images/chaticon.jpg" height="100vh"> -->
+  <div id="container" class="container">
+    
+    <!-- <img
         src="https://cdn.pixabay.com/photo/2020/01/02/16/38/chatbot-4736275_960_720.png"
         height="400vh"
         alt="Chatbot clipart"
       /> -->
-      <div id="chat" class="chat">
-        <div id="messages" class="messages"></div>
-        <input
-          id="input"
-          type="text"
-          placeholder="Write something..."
-          autocomplete="off"
-          autofocus="true"
-        />
+    <div id="chat" class="chat">
+      <div id="messages" class="messages"></div>
+      <div class=Form-group>
+
+        <div>
+
+          <input id="input" type="text" placeholder="Write something..." autocomplete="off" autofocus="true" />
+
+        </div>
+
+        <button class="submit" id="enterbutton">Enter</button>
+
       </div>
+
     </div>
     <script src="../js/bot.js"></script>
-  </body>
+</body>
+
 </html>

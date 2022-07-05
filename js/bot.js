@@ -15,7 +15,18 @@ const fetchBot = async () => {
             let input = inputField.value;
             inputField.value = "";
             output(input);
+          
+        let enterButton = document.getElementById("enterbutton")
+        enterButton.addEventListener("click", (e) => {
+            let input = inputField.value;
+            inputField.value = "";
+            output(input);
+            console.log(e)
+
+        })
   }
+
+
 });
   
       } else{

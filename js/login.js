@@ -31,7 +31,7 @@ function handleLogin() {
       goodData.then(data => {
         console.log('Success:', data);
         window.localStorage.setItem('access_token',data.access_token)
-        window.location.href = '../index.html';
+        window.location.href = '../html/userpage.html';
       })}})
       .catch((error) => {
         console.error('Error:', error);
