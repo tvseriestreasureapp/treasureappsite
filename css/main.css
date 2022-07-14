@@ -21,10 +21,10 @@
 body {
   /* background-color: linear-gradient( #f4c4f3 50%, #fc67fa 50%) */
   /* background-color: white; */
-  color: white;
+  color: black;
   background-repeat: no-repeat;
-  background-image: url("../images/pexels-ishita-gupta-4607597.jpg"),
-    url("../images/pexels-ishita-gupta-4607597.jpg");
+  background-image: url("../images/gt.jpg"),
+    url("../images/gt.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat, repeat;

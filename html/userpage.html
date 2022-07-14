@@ -4,6 +4,7 @@
   <head>
     <meta charset="UTF-8">
     <!--<title> Responsiive Admin Dashboard | CodingLab </title>-->
+    <link rel="stylesheet" href="../css/user.css">
     <link rel="stylesheet" href="../css/admin.css">
     <!-- <link rel="stylesheet" href="../css/main.css"> -->
     <!-- Boxicons CDN Link -->
@@ -62,48 +63,31 @@
       </ul>
   </div>
   <section class="home-section">
-    <nav>
-      <div class="sidebar-button">
-        <i class='bx bx-menu sidebarBtn'></i>
-        <span class="dashboard">Dashboard</span>
-      </div>
-      <div class="search-box">
-        <input type="text" placeholder="Search...">
-        <i class='bx bx-search' ></i>
-      </div>
-      <div class="profile-details">
-        <!--<img src="images/profile.jpg" alt="">-->
-        <span class="admin_name">Admin</span>
-        <i class='bx bx-chevron-down' ></i>
-      </div>
-    </nav>
-
-    <div class="home-content">
-      <div class="overview-boxes">
-        <div class="box">
-            <div class="right-side">
-              <div class="box-topic">RedBot</div>
-              <img src="../images/chaticon.jpg" style="height: 80px;width:150% ;">
-            </div>
+      <nav>
+        <div class="sidebar-button" style="color:#0092ff">
+          <i class='bx bx-menu sidebarBtn'></i>
+          <span class="dashboard">Dashboard</span>
         </div>
+        <div class="search-box">
+          <input type="text" placeholder="Search...">
+          <i class='bx bx-search' ></i>
+        </div>
+        <div class="profile-details">
+          <!--<img src="images/profile.jpg" alt="">-->
+          <span class="admin_name" id="username"></span>
+          <i class='bx bx-chevron-down' ></i>
+        </div>
+      </nav>
 
-          <div class="box">
-            <div class="right-side">
-              <div class="box-topic">Contact</div>
-              <div class="number">$12,876</div>
-              <div class="indicator">
-                <i class='bx bx-up-arrow-alt'></i>
-                <span class="text">Up from yesterday</span>
-              </div>
-            </div>
-            <i class='bx bx-cart cart three' ></i>
-          </div>
-      </div>
-          </ul>
+      <div class="home-content">
+        <div class="try">
+          <img src="../images/chaticon.jpg">
+          <div class="middle">
+              <a class="botbox" href="../html/bot.html">RedBot</a>
+          </div>  
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
   <script>
    let sidebar = document.querySelector(".sidebar");
@@ -115,6 +99,9 @@ sidebarBtn.onclick = function() {
 }else
   sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
 }
+
+document.getElementById("username").innerHTML = localStorage.getItem("username");
+
  </script>
 
 </body>

@@ -166,152 +166,79 @@ img {
 
 }
 
-
-
 .btn,
-
-.btn:link,
-
-.btn:visited {
-
-  display: inline-block;
-
-  text-transform: capitalize;
-
-  text-decoration: none;
-
-  padding: 1.2rem 3rem;
-
-  border-radius: 30px;
-
-  transition: all 0.2s;
-
-  position: relative;
-
-  font-size: 1.4rem;
-
-  border: none;
-
-  cursor: pointer;
-
-  margin: 1.5rem;
-
-}
-
-
-
-.btn:hover {
-
-  transform: translateY(-0.3rem);
-
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-
-}
-
-
-
-
-.btn::after {
-
-  content: "";
-
-  display: inline-block;
-
-  height: 100%;
-
-  width: 100%;
-
-  border-radius: 30px;
-
-  position: absolute;
-
-  top: 0;
-
-  left: 0;
-
-  z-index: -1;
-
-  transition: all 0.4s;
-
-}
-
-
-
-
+  .btn:link,
+  .btn:visited {
+    display: inline-block;
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: 1.2rem 3rem;
+    border-radius: 30px;
+    transition: all 0.2s;
+    position: relative;
+    font-size: 1.4rem;
+    border: none;
+    cursor: pointer;
+    margin: 1.5rem;
+  }
+  
+  .btn:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  } 
+  
 .btn:hover::after {
-
-  transform: scaleX(1.4) scaleY(1.6);
-
-  opacity: 0;
-
-}
-
-
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+  }
 
 .btn:active,
-
+  
 .btn:focus {
-
-  transform: translateY(-0.1px);
-
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-
+    transform: translateY(-0.1px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
-
-
 
 .btn--green {
-
-  background-color: #0092ff;
-
-  color: #fff;
-
-}
-
-
-
+    background-color: #0092ff;
+    color: #fff;
+  }
+  
 .btn--green:hover {
-
-  color: #ffffff;
-
-}
-
-.btn--green::after {
-
-  background-color: #0092ff;
-
-}
-
-.submit:hover {
-
-  background-color: #4dabf7;
-
-}
-
-
-@keyframes moveInBottom {
-
-  0% {
-
-    opacity: 0;
-
-    transform: translateY(3rem);
-
+    color: #ffffff;
   }
-
-  100% {
-
-    opacity: 1;
-
-    transform: translate(0);
-
+  
+  .btn--green::after {
+    background-color: #0092ff;
   }
-
-}
-
-
+  .submit:hover {
+    background-color: #4dabf7;
+  }
+  
+  @keyframes moveInBottom {
+      0% {
+          opacity: 0;
+          transform: translateY(3rem);
+      }
+      100% {
+          opacity: 1;
+          transform: translate(0);
+      }
+  }
 
 .btn--animated {
-  animation: moveInBottom 0.3s ease-out 0.75 backwards;
-
-}
+    animation: moveInBottom 0.3s ease-out 0.75 backwards;
+  }
