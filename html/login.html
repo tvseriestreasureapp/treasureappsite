@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <!-- <link href="../css/bootstrap.min.css" rel="stylesheet" > -->
+  <link href="../css/login.css" rel="stylesheet">
+  <link href="../css/main.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>TreasureApp</title>
+</head>
+
+    <body>
+        <div class='container'>
+            <div class='back_image'>
+
+            </div>
+
+            <div class='form'>
+                <form>
+                    <h2>Login</h2>
+                    <div>
+                        <label class='label' for='email'><b>Email:</b></label><br>
+                        <input class = 'input-field' type='email' placeholder='Enter Email' name='email'  id ='email' required>
+                    </div>
+
+                    <div>
+                        <label class='label' for='psw' ><b>Password:</b></label><br>
+                        <input class = 'input-field' type='password' placeholder='Enter Password' name='psw' id = 'password' required>
+                    </div>
+
+                    <div>
+                        <input id='check' type='checkbox' onclick='showPassword()'>
+                        <label id='sp'>Show Password</label>
+                    </div><br>
+
+                    <button type="button" class="button"  id ="cancelbtn">Cancel</button> 
+                    <span class="psw"><a href="#">Forgot password?</a></span>
+                </form>
+                <button class='button' type='button' onclick='handleLogin()'>Login</button><br><br>
+
+                <div>
+                    <input type='checkbox' checked='checked' name='remember'  id ='remember'>
+                    <label id='sp'> Remember me </label>
+                </div><br>
+
+                <label> 
+                    <span class='login'>Do not have an account? <a href='../html/signup.html'>Sign up here</a></span>
+                </label>
+                </form>
+            </div>  
+        </div>
+    </body>
+    <script src="../js/login.js"></script>
+</html>  

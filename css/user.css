@@ -1,0 +1,198 @@
+* {
+    font-family: "Nunito";
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    /* background-color: linear-gradient( #f4c4f3 50%, #fc67fa 50%) */
+    /* background-color: white; */
+    color: white;
+    background-repeat: no-repeat;
+    background-image: url("../images/gt.jpg"),
+      url("../images/pexels-ishita-gupta-4607597.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat, repeat;
+    font-family: "Nunito";
+    /* margin: 0; */
+  
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    display: inline-block;
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: 1.2rem 3rem;
+    border-radius: 30px;
+    transition: all 0.2s;
+    position: relative;
+    font-size: 1.4rem;
+    border: none;
+    cursor: pointer;
+    margin: 1.5rem;
+  }
+  
+  .btn:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  } 
+  
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+  }
+
+.btn:active,
+  
+.btn:focus {
+    transform: translateY(-0.1px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.btn--green {
+    background-color: #0092ff;
+    color: #fff;
+  }
+  
+.btn--green:hover {
+    color: #ffffff;
+  }
+  
+  .btn--green::after {
+    background-color: #0092ff;
+  }
+  .submit:hover {
+    background-color: #4dabf7;
+  }
+  
+  @keyframes moveInBottom {
+      0% {
+          opacity: 0;
+          transform: translateY(3rem);
+      }
+      100% {
+          opacity: 1;
+          transform: translate(0);
+      }
+  }
+
+.btn--animated {
+    animation: moveInBottom 0.3s ease-out 0.75 backwards;
+  }
+
+.try {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: #0092ff solid;
+    width: 30%;
+    height: 50%;
+    background-repeat: no-repeat;
+    align-items: center;
+    margin: auto;
+    position: relative;
+    color: red;
+}
+
+.try:hover img{
+    opacity: 0.3;
+}
+
+img {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.try:hover .middle{
+    opacity: 1;
+}
+
+.botbox{
+    background-color: black;
+    color: #fff;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+.sidepanel  {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 250px;
+    top: 160px;
+    left: 0;
+    background-color: #f1f1f1;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidepanel a:hover {
+    color: black;
+  }
+  
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #0092ff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color:#444;
+  }
+footer {
+    padding: 10px;
+}
