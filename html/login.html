@@ -1,60 +1,146 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Bootstrap CSS -->
-  <!-- <link href="../css/bootstrap.min.css" rel="stylesheet" > -->
-  <link href="../css/login.css" rel="stylesheet">
-  <link href="../css/main.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <title>TreasureApp</title>
-</head>
-
+    <head>
+        <title>Login V9</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="icon" type="image/png" href="images/icons/favicon.ico">
+        
+        <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+        
+        <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+        
+        <link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+        
+        <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+        
+        <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+        
+        <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+        
+        <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+        
+        <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+        
+        <link rel="stylesheet" type="text/css" href="../css/util.css">
+        <link rel="stylesheet" type="text/css" href="../css/log.css">
+        
+        <meta name="robots" content="noindex, follow">
+        <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js" 
+            nonce="9091e858-1367-47da-8ba5-43b15bfc380a"></script>
+        <script defer="" referrerpolicy="origin" 
+            src="/cdn-cgi/zaraz/s.js?z=JTdCJTIyZXhlY3V0ZWQlMjIlM0ElNUIlNUQlMkMlMjJ0JTIyJTNBJTIyTG9naW4lMjBWOSUyMiUyQyUyMnglMjIlM0EwLjk0ODkzMjA4Mzk4NTUxMTMlMkMlMjJ3JTIyJTNBMTUzNiUyQyUyMmglMjIlM0E4NjQlMkMlMjJqJTIyJTNBNzU0JTJDJTIyZSUyMiUzQTE1MzYlMkMlMjJsJTIyJTNBJTIyaHR0cHMlM0ElMkYlMkZjb2xvcmxpYi5jb20lMkZldGMlMkZsZiUyRkxvZ2luX3Y5JTJGaW5kZXguaHRtbCUyMiUyQyUyMnIlMjIlM0ElMjJodHRwcyUzQSUyRiUyRmNvbG9ybGliLmNvbSUyRndwJTJGdGVtcGxhdGUlMkZsb2dpbi1mb3JtLXY5JTJGJTIyJTJDJTIyayUyMiUzQTI0JTJDJTIybiUyMiUzQSUyMlVURi04JTIyJTJDJTIybyUyMiUzQTAlMkMlMjJxJTIyJTNBJTVCJTVEJTdE"></script>
+        <script nonce="9091e858-1367-47da-8ba5-43b15bfc380a">
+            (function(w,d){
+                !function(a,e,t,r){
+                    a.zarazData=a.zarazData||{};
+                    a.zarazData.executed=[];
+                    a.zaraz={deferred:[]};
+                    a.zaraz.q=[];
+                    a.zaraz._f=function(e){
+                        return function(){
+                            var t=Array.prototype.slice.call(arguments);
+                    a.zaraz.q.push({m:e,a:t})}};
+                    for(const e of[
+                        "track","set","ecommerce","debug"])a.zaraz[e]=a.zaraz._f(e);
+                        a.zaraz.init=()=>{var t=e.getElementsByTagName(r)[0],z=e.createElement(r),n=e.getElementsByTagName("title")[0];
+                        n&&(a.zarazData.t=e.getElementsByTagName("title")[0].text);
+                        a.zarazData.x=Math.random();
+                        a.zarazData.w=a.screen.width;
+                        a.zarazData.h=a.screen.height;
+                        a.zarazData.j=a.innerHeight;
+                        a.zarazData.e=a.innerWidth;
+                        a.zarazData.l=a.location.href;
+                        a.zarazData.r=e.referrer;
+                        a.zarazData.k=a.screen.colorDepth;
+                        a.zarazData.n=e.characterSet;
+                        a.zarazData.o=(new Date).getTimezoneOffset();
+                        a.zarazData.q=[];
+                        for(;a.zaraz.q.length;){const e=a.zaraz.q.shift();
+                        a.zarazData.q.push(e)}z.defer=!0;
+                        for(const e of[localStorage,sessionStorage])Object.keys(e||{}).filter((a=>a.startsWith("_zaraz_"))).forEach((t=>{try{a.zarazData["z_"+t.slice(7)]=JSON.parse(e.getItem(t))}catch{a.zarazData["z_"+t.slice(7)]=e.getItem(t)}}));z.referrerPolicy="origin";z.src="/cdn-cgi/zaraz/s.js?z="+btoa(encodeURIComponent(JSON.stringify(a.zarazData)));t.parentNode.insertBefore(z,t)};["complete","interactive"].includes(e.readyState)?zaraz.init():a.addEventListener("DOMContentLoaded",zaraz.init)}(w,d,0,"script");})(window,document);
+            </script>
+    </head>
     <body>
-        <div class='container'>
-            <div class='back_image'>
-
-            </div>
-
-            <div class='form'>
-                <form>
-                    <h2>Login</h2>
-                    <div>
-                        <label class='label' for='email'><b>Email:</b></label><br>
-                        <input class = 'input-field' type='email' placeholder='Enter Email' name='email'  id ='email' required>
+        <div class="container-login100" style="background-image: url('../images/wt.jpg');">
+            <div>
+                <a class="btn btn--green btn--animated" href="../index.html">Home</a>
+              </div>
+            <div class="wrap-login100 p-l-55 p-r-55 p-t-80 p-b-30">
+                
+                <form class="login100-form validate-form">
+                    <span class="login100-form-title p-b-37">
+                        Sign In
+                    </span>
+                    <div class="wrap-input100 validate-input m-b-20" data-validate="Enter username or email">
+                        <input class="input100" type="text" name="email" placeholder="Email" id ='email' required>
+                        <span class="focus-input100"></span>
                     </div>
-
-                    <div>
-                        <label class='label' for='psw' ><b>Password:</b></label><br>
-                        <input class = 'input-field' type='password' placeholder='Enter Password' name='psw' id = 'password' required>
+                    <div class="wrap-input100 validate-input m-b-25" data-validate="Enter password">
+                        <input class="input100" type="password" name="pass" placeholder="Password" id = 'password' required>
+                        <span class="focus-input100"></span>
                     </div>
-
                     <div>
                         <input id='check' type='checkbox' onclick='showPassword()'>
                         <label id='sp'>Show Password</label>
                     </div><br>
-
-                    <button type="button" class="button"  id ="cancelbtn">Cancel</button> 
+                    <div class="container-login100-form-btn">
+                        <button class="login100-form-btn" onclick='handleLogin()'>
+                            Sign In
+                        </button>
+                    </div>
                     <span class="psw"><a href="#">Forgot password?</a></span>
+                    <!-- <div class="text-center p-t-57 p-b-20">
+                        <span class="txt1">
+                            Or login with
+                        </span>
+                    </div>
+                    <div class="flex-c p-b-112">
+                        <a href="#" class="login100-social-item">
+                            <i class="fa fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="login100-social-item">
+                            <img src="images/icons/icon-google.png" alt="GOOGLE">
+                        </a>
+                    </div> -->
+                    <div class="text-center">
+                        <a href="signup.html" class="txt2 hov1">
+                            Sign Up
+                        </a>
+                    </div>
                 </form>
-                <button class='button' type='button' onclick='handleLogin()'>Login</button><br><br>
-
-                <div>
-                    <input type='checkbox' checked='checked' name='remember'  id ='remember'>
-                    <label id='sp'> Remember me </label>
-                </div><br>
-
-                <label> 
-                    <span class='login'>Do not have an account? <a href='../html/signup.html'>Sign up here</a></span>
-                </label>
-                </form>
-            </div>  
+            </div>
         </div>
+        <div id="dropDownSelect1"></div>
+        
+        <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+        
+        <script src="vendor/animsition/js/animsition.min.js"></script>
+        
+        <script src="vendor/bootstrap/js/popper.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+        
+        <script src="vendor/select2/select2.min.js"></script>
+        
+        <script src="vendor/daterangepicker/moment.min.js"></script>
+        <script src="vendor/daterangepicker/daterangepicker.js"></script>
+        
+        <script src="vendor/countdowntime/countdowntime.js"></script>
+        
+        <script src="js/log.js"></script>
+        
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+        
+            gtag('config', 'UA-23581568-13');
+            </script>
+        <script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon="{&quot;rayId&quot;:&quot;735fc4ef9c2003c2&quot;,&quot;token&quot;:&quot;cd0b4b3a733644fc843ef0b185f98241&quot;,&quot;version&quot;:&quot;2022.6.0&quot;,&quot;si&quot;:100}" crossorigin="anonymous"></script>
+        
+    
     </body>
     <script src="../js/login.js"></script>
-</html>  
+</html>

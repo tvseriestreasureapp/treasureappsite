@@ -1,207 +1,588 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
 
-  <!-- Bootstrap CSS -->
-  <!-- <link href="../css/bootstrap.min.css" rel="stylesheet" > -->
-  <link href="css/main.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <script src="./js/event.js" defer></script>
-  <script src="./js/collab.js" defer></script>
-  <script src="./js/actor.js" defer></script>
-  <script src="./js/art.js" defer></script>
-  <script src="./js/bts.js" defer></script>
-  <script src="./js/soundtrack.js" defer></script>
-  <script src="./js/poster.js" defer></script>
-  <!-- <script src="./js/event.js" defer></script>
-  <script src="./js/event.js" defer></script> -->
-  <title>TreasureApp</title>
-</head>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/boxicons.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    
 
-<body>
-  <nav class="navbar">
-    <span class="logo">TP</span>
-    <h4 class="title" style="color: royalblue; font-family:'Square Peg', cursive; font-size: 60px;"></h4>
-    <div class="navigation">
-      <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
-      <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
-      <a href="#footer"><i class="fa fa-fw fa-envelope"></i> Contact</a>
-      <a href="./html/login.html"><i class="fa fa-fw fa-user"></i> Login</a>
-    </div>
-  </nav>
+    <title>Treasure App Site</title>
+  </head>
+  <body data-bs-spy="scroll" data-bs-target=".navbar">
+    
+   <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
+      <div class="container">
+        <a class="navbar-brand logo-text" href="#">TreasureApp</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
 
-  <div class="page-contents">
-    <div class="first-section">
-      <span class="fixed-logo-style">
-        Treasure app
-      </span>
-      <div class="series-content">
-        <section class="cast-section-a">
-          <span> John Delvin aka John D </span>
-          <span>Pages Acquah</span>
-          <span>Detective Joseph</span>
-          <span>Ann Marie Mensah</span>
-          <span>Kwesi Pepra</span>
-          <span> Stacey Gyan</span>
-          <span>Pearl Akyea</span>
-          <span> Hilary Djobeh</span>
-        </section>
-        <h3>
-          Treasure <br>app
-        </h3>
-        <section class="cast-section-b">
-          <span>Jason Djobeh</span>
-          <span> Philip Quarshie</span>
-          <span>Trey Mason</span>
-          <span>Adjoa Kyere</span>
-          <span>Kofi Adjie</span>
-          <span>Akosua Polley</span>
-          <span>Isaac Acheampong</span>
-          <span>Alvin Bempong</span>
-          <span>Jasmine Adaare</span>
-        </section>
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#services">Features</a>
+             </li>        
+             <li class="nav-item">
+               <a class="nav-link" href="#team">Team</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="#contact">Contact</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="login.html">Login</a>
+             </li>
+          </ul>
+        </div>
       </div>
-      <a class="next-section bounce" href="#about-show"><i class="fa fa-fw fa-arrow-down"></i></a>
-    </div>
+    </nav>
 
-    <div class="second-section" id="series-data-more">
-      <div class="about-show" id="about-show">
-        <p>
-          A web series / television show, centered on individuals in Ghana who come into possession of a
-          mysterious app; An app that can grant wishes within certain constructs with restrictions.
-          These characters, some of whom are in different places and situations find themselves thrust in this game of
-          cat and mouse as they all use the app per their motives and for their own gain.
-        </p>
+   <section id="home">
+      <div class="container text-center">
+         <div class="row justify-content-center">
+            <div class="col-md-10">
+               <h1 class="text-white display-4">
+                  Treasure App Tv Series
+                  </h1>
+               <p style="color: black;" class="text-white" >
+               A web series / television show, centered on individuals in Ghana who come into possession of a
+               mysterious app; An app that can grant wishes within certain constructs with restrictions.
+               These characters, some of whom are in different places and situations find themselves thrust in this game of
+               cat and mouse as they all use the app per their motives and for their own gain.
+               </p>
+               <p style="color: black;">
+                  Created by Kofi S. Acquah & Sally Polley, the series explores the concept of morality
+                  and desires. What would one do in a certain situation if given the opportunity to get anything in the world?.
+               </p>
+               <a href="#contact" class="btn btn-brand" >Contact</a>
+            </div>
+         </div>
       </div>
+   </section>
 
-      <div class="show-credits" id="credits">
-        <p class="creators-credits">
-          Created by <i>Kofi S. Acquah</i> & <i>Sally Polley</i>, the series explores the concept of morality
-          and desires. What would
-          one do in a certain situation if given the opportunity to get anything in the world?.
-        </p>
-        <p class="music-production-credits">
-          Soundtracks by: <i>Pratik</i>, <i>Nifty</i> and <i>ninety8ko</i> -
-          <a href="mail-to: ninety8ko@gmail.com"> <i class="fa fa-fw fa-envelope"></i></a> -
-          <a href="https://twitter.com/ninety8ko"> <i class="fa fa-fw fa-twitter"></i></a> -
-          <a href="https://instagram.com/ninety8ko"> <i class="fa fa-fw fa-instagram"></i></a> -
-          <a href="https://soundcloud.com/ninety8ko"> <i class="fa fa-fw fa-soundcloud"></i></a> -
-          <a href="https://youtube.com/channel/UC0uAgsRRS2XECWWhaqLyNoA"><i class="fa fa-fw fa-youtube"></i></a>
-        </p>
-        <p class="shooting-locations">
-          <i class="fa fa-fw fa-location-arrow"></i><span>Accra, <span>Osu</span>, <span>Lapaz</span> and more...
-        </p>
+   <section id="features">
+      <div class="container">
+         <div class="row">
+            <div class="col-12 section-intro">
+               <h1>Cast</h1>
+               <div class="hline"></div>
+            </div>
+         </div>
+         <div class="row gy-4">
+
+            <!-- <div class="col-lg-4 col-sm-6 feature d-flex"> -->
+               <!-- <div class="icon-box me-3">
+                  <i class="bx bx-check"></i>
+               </div> -->
+               <div class="dynamic-text-shadow">
+                  <span> John Delvin aka John D </span>
+                  <span>Pages Acquah</span>
+                  <span>Detective Joseph</span>
+                  <span>Ann Marie Mensah</span>
+                  <span>Kwesi Pepra</span>
+                  <span> Stacey Gyan</span>
+                  <span>Pearl Akyea</span>
+                  <span> Hilary Djobeh</span>
+                  <span>Jason Djobeh</span>
+                  <span> Philip Quarshie</span>
+                  <span>Trey Mason</span>
+                  <span>Adjoa Kyere</span>
+                  <span>Kofi Adjie</span>
+                  <span>Akosua Polley</span>
+                  <span>Isaac Acheampong</span>
+                  <span>Alvin Bempong</span>
+                  <span>Jasmine Adaare</span>
+               </div>
+            <!-- </div> -->
+            <!-- <div class="col-lg-4 col-sm-6 feature d-flex">
+               <div class="icon-box me-3">
+                  <i class="bx bx-check"></i>
+               </div>
+               <div>
+                  <h5 class="title-sm">Feature</h5>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit incidunt inventore quibusdam accusamus esse.</p>
+               </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 feature d-flex">
+               <div class="icon-box me-3">
+                  <i class="bx bx-check"></i>
+               </div>
+               <div>
+                  <h5 class="title-sm">Feature</h5>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit incidunt inventore quibusdam accusamus esse.</p>
+               </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 feature d-flex">
+               <div class="icon-box me-3">
+                  <i class="bx bx-check"></i>
+               </div>
+               <div>
+                  <h5 class="title-sm">Feature</h5>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit incidunt inventore quibusdam accusamus esse.</p>
+               </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 feature d-flex">
+               <div class="icon-box me-3">
+                  <i class="bx bx-check"></i>
+               </div>
+               <div>
+                  <h5 class="title-sm">Feature</h5>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit incidunt inventore quibusdam accusamus esse.</p>
+               </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 feature d-flex">
+               <div class="icon-box me-3">
+                  <i class="bx bx-check"></i>
+               </div>
+               <div>
+                  <h5 class="title-sm">Feature</h5>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit incidunt inventore quibusdam accusamus esse.</p>
+               </div>
+            </div> -->
+         </div>
       </div>
-    </div>
+   </section>
 
-    <div class="third-section">
+   <section id="portfolio" class="row g-0 py-0">
+      <div class="col-lg-4 col-sm-6">
+         <div class="portfolio-item">
+               <img src="./images/IMG-20220418-WA0005.jpg" alt="">
+               <div class="portfolio-overlay">
+                  <div>
+                     <h3>Merch Name</h3>
+                     <h6>Price</h6>
+                  </div>
+               </div>
+         </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+         <div class="portfolio-item">
+               <img src="./images/IMG-20220418-WA0006.jpg" alt="">
+               <div class="portfolio-overlay">
+                  <div>
+                     <h3>Merch Name</h3>
+                     <h6>Price</h6>
+                  </div>
+               </div>
+         </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+         <div class="portfolio-item">
+               <img src="./img/photo_6010380777826663228_y.jfif" alt="">
+               <div class="portfolio-overlay">
+                  <div>
+                     <h3>Merch Name</h3>
+                     <h6>Price</h6>
+                  </div>
+               </div>
+         </div>
+      </div>
+      <!-- <div class="col-lg-4 col-sm-6">
+         <div class="portfolio-item">
+               <img src="img/p3.jpg" alt="">
+               <div class="portfolio-overlay">
+                  <div>
+                     <h3>Project title</h3>
+                     <h6>Project subtite</h6>
+                  </div>
+               </div>
+         </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+         <div class="portfolio-item">
+               <img src="img/p4.jpg" alt="">
+               <div class="portfolio-overlay">
+                  <div>
+                     <h3>Project title</h3>
+                     <h6>Project subtite</h6>
+                  </div>
+               </div>
+         </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+         <div class="portfolio-item">
+               <img src="img/p5.jpg" alt="">
+               <div class="portfolio-overlay">
+                  <div>
+                     <h3>Project title</h3>
+                     <h6>Project subtite</h6>
+                  </div>
+               </div>
+         </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+         <div class="portfolio-item">
+               <img src="img/p6.jpg" alt="">
+               <div class="portfolio-overlay">
+                  <div>
+                     <h3>Project title</h3>
+                     <h6>Project subtite</h6>
+                  </div>
+               </div>
+         </div>
+      </div> -->
+   </section>
 
-      <section class="sect-behind-the-scenes">
-        <h4>Behind the scenes...</h4>
-        <div class="card-container" id="bts-section">
-        </div>
+   <section id="services">
+      <div class="container">
+         <div class="row">
+            <div class="col-12 section-intro">
+               <h1>Features</h1>
+               <div class="hline"></div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-lg-4 col-sm-6 p-4">
+               <div class="icon-box">
+                  <i class='bx bxs-landscape'></i>
+               </div>
+               <a href="./html/components/bts.html">
+               <h4 class="title-sm mt-4">Behind The Scenes</h4>
+               <p>Click here to view some videos and pictures of how the tv series was shot</p>
+               </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 p-4">
+               <!-- <div class="icon-box">
+                  <i class='bx bxs-coffee'></i>
+               </div> -->
+               <a href="./html/components/collab.html">
+               <h4 class="title-sm mt-4">Collaborations</h4>
+               <p>Click here to see our collaboraters.</p>
+            </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 p-4">
+               <!-- <div class="icon-box">
+                  <i class='bx bxs-image'></i>
+               </div> -->
+               <a href="./html/components/art.html">
+               <h4 class="title-sm mt-4">Arts & Designs</h4>
+               <p>Click here to see some arts and designs about the tv series</p>
+            </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 p-4">
+               <!-- <div class="icon-box">
+                  <i class='bx bxs-check-shield'></i>
+               </div> -->
+               <a href="./html/components/events.html">
+               <h4 class="title-sm mt-4">Events</h4>
+               <p>Click here to see some events</p>
+            </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 p-4">
+               <!-- <div class="icon-box">
+                  <i class='bx bx-laptop'></i>
+               </div> -->
+               <a href="./html/components/actor.html">
+               <h4 class="title-sm mt-4">Actors & Actresses</h4>
+               <p>Click here to see the amazing actors and actresses on the show</p>
+            </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 p-4">
+               <!-- <div class="icon-box">
+                  <i class='bx bx-laptop'></i>
+               </div> -->
+               <a href="./html/components/soundtrack.html">
+               <h4 class="title-sm mt-4">Soundtrack</h4>
+               <p>Click here to listen to our awesome soundtracks on the show</p>
+            </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 p-4">
+               <!-- <div class="icon-box">
+                  <i class='bx bxs-happy-heart-eyes'></i>
+               </div> -->
+               <a href="./html/components/poster.html">
+               <h4 class="title-sm mt-4">Posters</h4>
+               <p>Click to see our beautiful posters</p>
+            </a>
+            </div>
+         </div>
+      </div>
+   </section>
 
-      </section>
+   <section id="team" class="row g-0 py-0 text-center">
+      <div class="col-lg-3 col-sm-6 team-member">
+         <div class="team-member-img">
+            <img src="./img/IMG-20220421-WA0004.jpg" alt="">
+            <div class="social-icons">
+               <a href="#"><i class="bx bxl-facebook"></i></a>
+               <a href="#"><i class="bx bxl-twitter"></i></a>
+               <a href="#"><i class="bx bxl-instagram"></i></a>
+               <a href="#"><i class="bx bxl-github"></i></a>
+            </div>
+         </div>
+         <div class="p-4">
+            <h5 class="title-sm mt-3 mb-0 text-white">Kofi S. Acquah</h5>
+            <small class="text-white">Creator</small>
+            <div class="hline"></div>
+            <p class="text-white">Well skillful lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</p>
+         </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 team-member even">
+         <div class="team-member-img">
+            <img src="./img/IMG-20220421-WA0004.jpg" alt="">
+            <div class="social-icons">
+               <a href="#"><i class="bx bxl-facebook"></i></a>
+               <a href="#"><i class="bx bxl-twitter"></i></a>
+               <a href="#"><i class="bx bxl-instagram"></i></a>
+               <a href="#"><i class="bx bxl-github"></i></a>
+            </div>
+         </div>
+         <div class="p-4">
+            <h5 class="title-sm mt-3 mb-0 text-white">Sally Polley</h5>
+            <small class="text-white">Co-Creator</small>
+            <div class="hline"></div>
+            <p class="text-white">Well skillful lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</p>
+         </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 team-member">
+         <div class="team-member-img">
+            <img src="./img/IMG-20220421-WA0004.jpg" alt="">
+            <div class="social-icons">
+               <a href="#"><i class="bx bxl-facebook"></i></a>
+               <a href="#"><i class="bx bxl-twitter"></i></a>
+               <a href="#"><i class="bx bxl-instagram"></i></a>
+               <a href="#"><i class="bx bxl-github"></i></a>
+            </div>
+         </div>
+         <div class="p-4">
+            <h5 class="title-sm mt-3 mb-0 text-white">Pratik</h5>
+            <small class="text-white">Sound Engineer</small>
+            <div class="hline"></div>
+            <p class="text-white">Well skillful lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</p>
+         </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 team-member even">
+         <div class="team-member-img">
+            <img src="./img/IMG-20220421-WA0004.jpg" alt="">
+            <div class="social-icons">
+               <a href="#"><i class="bx bxl-facebook"></i></a>
+               <a href="#"><i class="bx bxl-twitter"></i></a>
+               <a href="#"><i class="bx bxl-instagram"></i></a>
+               <a href="#"><i class="bx bxl-github"></i></a>
+            </div>
+         </div>
+         <div class="p-4">
+            <h5 class="title-sm mt-3 mb-0 text-white">ninety8ko</h5>
+            <small class="text-white">Sound Engineer</small>
+            <div class="hline"></div>
+            <p class="text-white">Well skillful lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</p>
+         </div>
+      </div>
+   </section>
 
-      <section class="sect-collaborations">
-        <h4>Collaborations...</h4>
-        <div class="card-container" id="collaborations-section">
-          
-        </div>
-      </section>
+   <!-- <section id="testimonials" class="text-center">
+      <div class="container">
+         <div class="row">
+            <div class="col-12">
 
-      <section class="sect-arts-designs">
-        <h4>Arts & designs...</h4>
-        <div class="card-container" id="arts-section">
-        </div>
+               <ul class="nav nav-pills justify-content-center mb-3" id="pills-tab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                       <img src="img/team-4-800x800.jpg" alt="">
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                     <img src="img/team-6-800x800.jpg" alt="">
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
+                     <img src="img/team-8-800x800.jpg" alt="">
+                    </button>
+                  </li>
+                </ul>
 
-      </section>
+                <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
 
-      <section class="sect-events" >
-        <h4>Events...</h4>
-        <div class="card-container" id="events-section">
-         
-        </div>
-      </section>
+                     <div class="review">
+                        <div class="stars">
+                           <i class="bx bxs-star"></i>
+                           <i class="bx bxs-star"></i>
+                           <i class="bx bxs-star"></i>
+                           <i class="bx bxs-star"></i>
+                           <i class="bx bx-star"></i>
+                        </div>
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ea explicabo nisi quia blanditiis assumenda quos veritatis sit deleniti porro nulla temporibus deserunt, iure in labore incidunt quis eos. Accusamus sed excepturi architecto.</p>
+                        <h5 class="title-sm mb-0">John Doe</h5>
+                        <small>Web Developer</small>
+                     </div>
 
-      <section class="actors-actress-slides">
-        <h4>Actors and Actresses...</h4>
-        <div class="card-container" id="actors-section">
-        </div>
-      </section>
 
-      <section class="sect-soundtracks">
-        <h4>Soundtracks...</h4>
-        <div class="card-container" id="soundtrack-section">
-        </div>
+                  </div>
+                  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                     <div class="review">
+                        <div class="stars">
+                           <i class="bx bxs-star"></i>
+                           <i class="bx bxs-star"></i>
+                           <i class="bx bxs-star"></i>
+                           <i class="bx bxs-star"></i>
+                           <i class="bx bx-star"></i>
+                        </div>
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ea explicabo nisi quia blanditiis assumenda quos veritatis sit deleniti porro nulla temporibus deserunt, iure in labore incidunt quis eos. Accusamus sed excepturi architecto.</p>
+                        <h5 class="title-sm mb-0">John Doe</h5>
+                        <small>Web Developer</small>
+                     </div>
+                  </div>
+                  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                     <div class="review">
+                        <div class="stars">
+                           <i class="bx bxs-star"></i>
+                           <i class="bx bxs-star"></i>
+                           <i class="bx bxs-star"></i>
+                           <i class="bx bxs-star"></i>
+                           <i class="bx bx-star"></i>
+                        </div>
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ea explicabo nisi quia blanditiis assumenda quos veritatis sit deleniti porro nulla temporibus deserunt, iure in labore incidunt quis eos. Accusamus sed excepturi architecto.</p>
+                        <h5 class="title-sm mb-0">John Doe</h5>
+                        <small>Web Developer</small>
+                     </div>
+                  </div>
+                </div>
+            </div>
+         </div>
+      </div>
+   </section> -->
 
-      </section>
+   <!-- <section id="clients" class="bg-light">
+      <div class="container">
+         <div class="row gy-4">
+            <div class="col-lg-2 col-md-3 col-6">
+               <img src="img/logo1.svg" alt="">
+            </div>
+            <div class="col-lg-2 col-md-3 col-6">
+               <img src="img/logo2.svg" alt="">
+            </div>
+            <div class="col-lg-2 col-md-3 col-6">
+               <img src="img/logo3.svg" alt="">
+            </div>
+            <div class="col-lg-2 col-md-3 col-6">
+               <img src="img/logo4.svg" alt="">
+            </div>
+            <div class="col-lg-2 col-md-3 col-6">
+               <img src="img/logo5.svg" alt="">
+            </div>
+            <div class="col-lg-2 col-md-3 col-6">
+               <img src="img/logo1.svg" alt="">
+            </div>
+         </div>
+      </div>
+   </section> -->
 
-      <section class="sect-posters">
-        <h4>Posters...</h4>
-        <div class="card-container" id="poster-section">
-        </div>
+   <section id="contact">
+      <div class="container">
+         <div class="row align-items-center">
+            <div class="col-lg-4">
+               <img src="./img/IMG-20220411-WA0013.jpg" alt="">
+            </div>
+            <div class="col-lg-6 offset-lg-1">
+               <form>
+                  <div class="mb-3">
+                    <small>Name</small>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+                  <div class="mb-3">
+                     <small>Email</small>
+                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                   </div>
+                   <div class="mb-3">
+                     <small>Question</small>
+                     <textarea name="" id="" cols="30" rows="4" class="form-control"></textarea>
+                   </div>
+                  <button type="submit" class="btn btn-brand">Submit</button>
+                </form>
+            </div>
+         </div>
+      </div>
+   </section>
 
-      </section>
+   <!-- <section id="cta" class="py-5">
+      <div class="container py-4">
+         <div class="row justify-content-center">
+            <div class="col-md-6">
+               <h3 class="text-white">Login to get amazing features. Don't have an account?</h3>
+            </div>
+            <div class="col-auto">
+               <a href="signup.html" class="btn btn-light">Sign up Here!!</a>
+            </div>
+         </div>
+      </div>
+   </section> -->
 
-    </div>
-  </div>
-</body>
-<footer class="footer-section" id="footer">
-  <div class="col-1 socials" id="socials-section">
-    <a href="mailto:tvseriestreasureapp@gmail.com" title="Mail us" target="_blank">
-      <i class="fa fa-fw fa-envelope"></i>
-    </a>
-    <a href="https://www.facebook.com/treasureapptv/" title="Connect with us on facebook" target="_blank">
-      <i class="fa fa-fw fa-facebook"></i>
-    </a>
-    <a href="https://instagram.com/treasureapptv?igshid=YmMyMTA2M2Y=" title="Checkout our instagram page"
-      target="_blank">
-      <i class="fa fa-fw fa-instagram"></i>
-    </a>
-    <a href="https://twitter.com/treasureapptv/status/1474153302644432897?s=21&t=Y2xU665cgRVbaC5fx9znLA"
-      title="Check us out on twitter" target="_blank">
-      <i class="fa fa-fw fa-twitter"></i>
-    </a>
-    <a href="https://tiktok.com/" title="Follow us on tiktok." target="_blank">
-      <span class="iconify" data-icon="fa-brands:tiktok"></span>
-    </a>
-    <a href="https://triller.com/" title="Triller" target="_blank">
-      <span class="iconify" data-icon="simple-icons:triller"></span>
-    </a>
-    <a href="https://youtube.com/channel/UCaLxTvTVZ3Ar5q4zYNw8rZg" title="Subscribe to our youtube channel"
-      target="_blank">
-      <i class="fa fa-fw fa-youtube"></i>
-    </a>
-    <a href="https://t.me/+7Frdu51YX6U0NGVk" title="Join our telegram conversation space" target="_blank">
-      <i class="fa fa-telegram"></i>
-    </a>
-  </div>
-  <div class="col-2 downloads-more" id="downloads">
-    <a href="https://google.playstore.com" title="Download from google playstore" target="_blank"><i
-        class="fa fa-fw fa-play"></i></a>
-    <a href="https://apple.appstore.com" title="Download the app on your apple device" target="_blank"><i
-        class="fa fa-apple"></i></a>
-    <a href="./html/merch.html" title="Buy our merch" target="_blank"><span>Buy merch</span></i></a>
+   <footer>
+      <div class="footer-top">
+         <div class="container">
+            <div class="row gy-5">
+               <div class="col-md-4">
+                  <h4 class="logo-text">TreasureApp</h4>
+                  <p>Contact or Follow us on our social media sites</p>
+                  <div class="social-icons">
+                     <a href="https://www.facebook.com/treasureapptv/" title="Facebook" target="_blank"><i class="bx bxl-facebook"></i></a>
+                     <a href="https://twitter.com/treasureapptv/status/1474153302644432897?s=21&t=Y2xU665cgRVbaC5fx9znLA" title="Twitter" target="_blank"><i class="bx bxl-twitter"></i></a>
+                     <a href="https://instagram.com/treasureapptv?igshid=YmMyMTA2M2Y=" title="Instagram" target="_blank"><i class="bx bxl-instagram"></i></a>
+                     <a href="https://tiktok.com/" title="Tiktok" target="_blank"><i class="bx bxl-tiktok"></i></a>
+                     <a href="https://t.me/+7Frdu51YX6U0NGVk" title="Telegram" target="_blank"><i class="bx bxl-telegram"></i></a>
+                     <a href="https://youtube.com/channel/UCaLxTvTVZ3Ar5q4zYNw8rZg" title="Youtube" target="_blank"><i class="bx bxl-youtube"></i></a>
+                     <a href="https://triller.com/" title="Triller" target="_blank">
+                        <span class="iconify" data-icon="simple-icons:triller"></span>
+                      </a>
+                  </div>
+               </div>
+               <div class="col-md-2">
+                  <h5 class="title-sm">Navigation</h5>
+                  <div class="footer-links">
+                     <a href="#services">Features</a>
+                     <a href="#projects">Merch</a>
+                     <a href="#team">Team</a>
+                     <!-- <a href="#">Blog</a> -->
+                  </div>
+               </div>
+               <div class="col-md-2">
+                  <h5 class="title-sm">More</h5>
+                  <div class="footer-links">
+                     <a href="#">FAQ's</a>
+                     <a href="#">Privacy & Policy</a>
+                     <a href="#">License</a>
+                  </div>
+               </div>
+               <div class="col-md-2">
+                  <h5 class="title-sm">Contact</h5>
+                  <div class="footer-links">
+                     <p class="mb">Accra , Osu, Lapaz</p>
+                     <p class="mb-"><i class='bx bxs-phone'></i>(+233) 54 7801805</p>
+                     <a href="mailto:tvseriestreasureapp@gmail.com" title="Mail us" target="_blank" class="mb"><i class='bx bx-envelope'></i>Mail Us</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="footer-bottom">
+         <div class="container">
+            <div class="row justify-content-between gy-3">
+               <div class="col-md-6">
+                  <p class="mb-0">© Agency2021. All rights reserved</p>
+               </div>
+               <!-- <div class="col-auto">
+                  <p class="mb-0">Created with ❤️ by SA7MAN</p>
+               </div> -->
+            </div>
+         </div>
+      </div>
+   </footer>
 
-  </div>
-</footer>
-<script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
-<!-- <script>
 
-window.onload =()=>{
-  toggleMenu();
-}
-  function toggleMenu(){
-    var toggler = document.getElementById("toggle-icon");
-    toggler.addEventListener("click", ()=>{
-      document.getElementsByClassName("toggle-menu").style.display === "flex";
-    })}
-</script> -->
-
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    
+  </body>
 </html>

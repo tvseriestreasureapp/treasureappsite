@@ -148,6 +148,8 @@ nav .search-box .bx-search{
 .home-section nav .profile-details{
   display: flex;
   align-items: center;
+  justify-content: space-between;
+
   background: #F5F6FA;
   border: 2px solid #EFEEF1;
   border-radius: 6px;
@@ -155,18 +157,20 @@ nav .search-box .bx-search{
   min-width: 190px;
   padding: 0 15px 0 2px;
 }
+
+
 nav .profile-details img{
   height: 40px;
   width: 40px;
   border-radius: 6px;
   object-fit: cover;
 }
-nav .profile-details .admin_name{
+ nav .profile-details .admin_name {
   font-size: 15px;
   font-weight: 500;
   color: #333;
-  margin: 0 10px;
-  white-space: nowrap;
+  /* margin: 0 10px; */
+  /* white-space: nowrap; */
 }
 nav .profile-details i{
   font-size: 25px;

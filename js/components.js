@@ -52,7 +52,7 @@ function handlePut() {
         // const csrftoken = document.querySelector('[name=csrfmiddlewaretoken]').value;
     
     
-        fetch('https://treasureapptv.herokuapp.com/api/actor/{{id}}', {
+        fetch(`https://treasureapptv.herokuapp.com/api/actor/${id}`, {
             method: 'PUT', // *GET, POST, PUT, DELETE, etc.
             mode: 'cors', // no-cors, *cors, same-origin
             cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
