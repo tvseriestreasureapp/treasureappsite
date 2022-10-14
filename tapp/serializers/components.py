@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from tapp.models.components import Actor, BTS, Event, Art,Collab, Poster, Soundtrack
+from tapp.models.components import Actor, BTS, Cast, Crew, Event, Art,Collab, Magazine, Poster, Soundtrack
 
 
 class BTSSerializer(serializers.ModelSerializer):
@@ -38,3 +38,19 @@ class PosterSerializer(serializers.ModelSerializer):
     class Meta:
         fields = '__all__'
         model=Poster
+
+class MagazineSerializer(serializers.ModelSerializer):
+    class Meta:
+        fields = '__all__'
+        model=Magazine
+
+class CastSerializer(serializers.ModelSerializer):
+    class Meta:
+        fields = '__all__'
+        model=Cast
+
+
+class CrewSerializer(serializers.ModelSerializer):
+    class Meta:
+        fields = '__all__'
+        model=Crew

@@ -10,7 +10,7 @@
   position: fixed;
   height: 100%;
   width: 240px;
-  background: #0092ff;
+  background: rgb(255, 102, 102);
   transition: all 0.5s ease;
 }
 .sidebar.active{
@@ -50,7 +50,7 @@
   transition: all 0.4s ease;
 }
 .sidebar .nav-links li a.active{
-  background: #081D45;
+  background: rgba(17, 36, 90, 0.8);
 }
 .sidebar .nav-links li a:hover{
   background: #081D45;
@@ -134,7 +134,7 @@ nav .search-box .bx-search{
   position: absolute;
   height: 40px;
   width: 40px;
-  background: #2697FF;
+  background: rgb(255, 102, 102);
   right: 5px;
   top: 50%;
   transform: translateY(-50%);
@@ -237,7 +237,7 @@ nav .profile-details i{
   background: #cce5ff;
   line-height: 50px;
   text-align: center;
-  color: #66b0ff;
+  color: black;
   border-radius: 12px;
   margin: -15px 0 0 6px;
 }
@@ -374,6 +374,10 @@ nav .profile-details i{
     width: calc(100% - 220px);
     left: 220px;
   }
+  .try {
+    /* border: rgb(255, 102, 102) solid; */
+    width: 80%;
+}
 }
 @media (max-width: 1150px) {
   .home-content .sales-boxes{
@@ -387,12 +391,20 @@ nav .profile-details i{
   .home-content .sales-boxes .top-sales{
     margin: 0;
   }
+  .try {
+    /* border: rgb(255, 102, 102) solid; */
+    width: 80%;
+}
 }
 @media (max-width: 1000px) {
   .overview-boxes .box{
     width: calc(100% / 2 - 15px);
     margin-bottom: 15px;
   }
+  .try {
+    /* border: rgb(255, 102, 102) solid; */
+    width: 80%;
+}
 }
 @media (max-width: 700px) {
   nav .sidebar-button .dashboard,
@@ -407,6 +419,10 @@ nav .profile-details i{
   .home-content .sales-boxes .sales-details{
     width: 560px;
   }
+  .try {
+    /* border: rgb(255, 102, 102) solid; */
+    width: 80%;
+}
 }
 @media (max-width: 550px) {
   .overview-boxes .box{
@@ -416,6 +432,10 @@ nav .profile-details i{
   .sidebar.active ~ .home-section nav .profile-details{
     display: none;
   }
+  .try {
+    /* border: rgb(255, 102, 102) solid; */
+    width: 80%;
+}
 }
   @media (max-width: 400px) {
   .sidebar{
@@ -440,4 +460,8 @@ nav .profile-details i{
     left: 60px;
     width: calc(100% - 60px);
   }
+  .try {
+    /* border: rgb(255, 102, 102) solid; */
+    width: 80%;
+}
 }

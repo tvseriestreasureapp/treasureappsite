@@ -1,6 +1,6 @@
 from rest_framework import viewsets,permissions
-from tapp.serializers.components import ActorSerializer,ArtSerializer,BTSSerializer,CollabSerializer,EventSerializer, PosterSerializer, SoundtrackSerializer
-from tapp.models.components import Actor,Art,BTS,Collab,Event, Poster, Soundtrack
+from tapp.serializers.components import ActorSerializer,ArtSerializer,BTSSerializer, CastSerializer,CollabSerializer, CrewSerializer,EventSerializer, MagazineSerializer, PosterSerializer, SoundtrackSerializer
+from tapp.models.components import Actor,Art,BTS, Cast,Collab, Crew,Event, Magazine, Poster, Soundtrack
 
 class BTSViewset(viewsets.ModelViewSet):
     permission_classes = [permissions.AllowAny, ]
@@ -36,3 +36,20 @@ class PosterViewset(viewsets.ModelViewSet):
     permission_classes = [permissions.AllowAny, ]
     serializer_class=PosterSerializer
     queryset= Poster.objects.all()
+
+
+class MagazineViewset(viewsets.ModelViewSet):
+    permission_classes = [permissions.AllowAny, ]
+    serializer_class=MagazineSerializer
+    queryset= Magazine.objects.all()
+
+class CastViewset(viewsets.ModelViewSet):
+    permission_classes = [permissions.AllowAny, ]
+    serializer_class=CastSerializer
+    queryset= Cast.objects.all()
+
+
+class CrewViewset(viewsets.ModelViewSet):
+    permission_classes = [permissions.AllowAny, ]
+    serializer_class=CrewSerializer
+    queryset= Crew.objects.all()

@@ -1,9 +1,8 @@
 from django.urls import path, include
 from tapp.views.user import LoginView, SignUpAPI
-from tapp.views.components import ActorViewset, ArtViewset,BTSViewset,CollabViewset,EventViewset, PosterViewset, SoundtrackViewset
+from tapp.views.components import ActorViewset, ArtViewset,BTSViewset, CastViewset,CollabViewset, CrewViewset,EventViewset, MagazineViewset, PosterViewset, SoundtrackViewset
 from tapp.views.bot import BotViewset
 from rest_framework import routers
-from django.views.decorators.cache import cache_page
 
 router = routers.DefaultRouter()
 
@@ -16,6 +15,9 @@ router.register(r'actor',ActorViewset, 'actor')
 router.register(r'soundtrack',SoundtrackViewset, 'soundtrack')
 router.register(r'poster',PosterViewset,'poster')
 router.register(r'bot', BotViewset,basename='bot')
+router.register(r'mag', MagazineViewset,basename='magazine')
+router.register(r'cast', CastViewset,basename='cast')
+router.register(r'crew', CrewViewset,basename='crew')
 # urlpatterns = router.urls
 
 urlpatterns = [

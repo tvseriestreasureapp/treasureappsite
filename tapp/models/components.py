@@ -35,3 +35,18 @@ class Soundtrack(models.Model):
 class Poster(models.Model):
     name = models.CharField(max_length=100, null=True, blank=True, default="")
     picture = models.FileField(upload_to='poster/',storage=gd_storage,blank=True,null=True)
+
+class Magazine(models.Model):
+    name = models.CharField(max_length=100, null=True, blank=True, default="")
+    picture = models.FileField(upload_to='poster/',storage=gd_storage,blank=True,null=True)
+    article = models.CharField(max_length=300, blank=True, null=True)
+    description = models.TextField(blank=True, null=True)
+
+class Cast(models.Model):
+    name = models.CharField(max_length=100, null=True, blank=True, default="X")
+
+class Crew(models.Model):
+    name = models.CharField(max_length=100, null=True, blank=True, default="")
+    picture = models.FileField(upload_to='crew/',storage=gd_storage,blank=True,null=True)
+    description = models.CharField(max_length=500, null=True, blank=True, default="")
+    role = models.CharField(max_length=100, blank=True, null=True)
